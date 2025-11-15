@@ -2,7 +2,7 @@ import pyaudio
 import wave
 import os
 
-def record_audio(filename="speech.wav", duration=10, chunk=1024, channels=1, rate=44100):
+def record_audio(filename="final_output.wav", duration=10, chunk=1024, channels=1, rate=44100):
     # Clear the file if it exists
     if os.path.exists(filename):
         open(filename, 'wb').close()

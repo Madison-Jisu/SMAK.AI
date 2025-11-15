@@ -42,7 +42,7 @@ def record_audio(filename="final_output.wav", duration=15, chunk=1024, channels=
     print(f"[INFO] Recording saved to '{filename}'\n")
     return filename
 
-def analyze_emotion(filename="speech.wav"):
+def analyze_emotion(filename="final_output.wav"):
     print("[INFO] Loading audio emotion classifier... 🎧")
     classifier = pipeline(
         task='audio-classification',
